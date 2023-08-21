@@ -1,0 +1,125 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  user-select: none;
+}
+
+body {
+  width: 300px;
+  height: 250px;
+  overflow: hidden;
+  user-select: none;
+}
+
+.tta_container {
+  width: 100%;
+  height: 100%;
+  background-color: #00000000;
+  position: relative;
+  overflow: hidden;
+}
+
+.tta_check {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  opacity: .5;
+  height: 250px;
+  width: 300px;
+}
+
+
+/* tta_slide_1 */
+.tta_bg {
+  top: 0px;
+  left: 0px;
+}
+.tta_boxbottom {
+  top: 124px;
+  left: 89px;
+}
+.tta_boxtop {
+  top: 76px;
+  left: 83px;
+}
+.tta_btn {
+  top: 152px;
+  left: 83px;
+  cursor: pointer;
+}
+.tta_btn2 {
+  top: 152px;
+  left: 83px;
+  cursor: pointer;
+}
+.tta_mnemonic {
+  top: 35px;
+  left: 80px;
+}
+.tta_offers {
+  top: 91px;
+  left: 28px;
+}
+.tta_recharge {
+  top: 37px;
+  left: 119px;
+}
+
+
+/* Utility class */
+.tta_absolute {
+  position: absolute;
+}
+
+.tta_hidden {
+  display: none;
+}
+
+.tta_zeroOpacity {
+  opacity: 0;
+}
+
+.error {
+  outline: 2px solid red !important;
+}
+
+.success {
+  outline: 2px solid rgb(9, 148, 39) !important;
+}
+.tta_macro{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 250px;
+  width: 300px;
+  z-index: 99999;
+}
+
+/* animista animation */
+.jello-horizontal{animation:jello-horizontal 1.2s 1s infinite both}
+@keyframes jello-horizontal{0%{transform:scale3d(1,1,1)}30%{transform:scale3d(1.15,.85,1)}40%{transform:scale3d(.85,1.15,1)}50%{transform:scale3d(1.15,.85,1)}65%{transform:scale3d(.95,1.05,1)}75%{transform:scale3d(1.05,.95,1)}100%{transform:scale3d(1,1,1)}}
+
+
+.wobble-hor-top{-webkit-animation:wobble-hor-top 3.5s  infinite both;animation:wobble-hor-top 3.5s infinite both}
+@keyframes wobble-hor-top {
+  0%,76%,
+  100% {
+    transform: translateX(0%);
+    transform-origin: 50% 50%;
+  }
+  80% {
+    transform: translateX(-30px) rotate(6deg);
+  }
+  84% {
+    transform: translateX(15px) rotate(-6deg);
+  }
+  88% {
+    transform: translateX(-15px) rotate(3.6deg);
+  }
+  92% {
+    transform: translateX(9px) rotate(-2.4deg);
+  }
+  96% {
+    transform: translateX(-6px) rotate(1.2deg);
+  }
+}
